@@ -2,178 +2,189 @@
 <html lang="vi">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fuhlen Việt Nam</title>
-    <link rel="stylesheet" href="./fuhlen.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="./fuhlen.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>fuhlen Việt Nam</title>
+     <link rel="stylesheet" href="./fuhlen.css" type="text/css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <script type="text/javascript" src="./fuhlen.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="top">
-        <p class="title">FUHLEN VIỆT NAM</p>
-    </div>
-    <div class="container fixed">
-        <a href="http://fuhlen.vn/" target="_blank" title="Fuhlen việt nam-fuhlen marlock" rel="home">
-            <img src="./OIP.jpg" width="195" height="83" class="logo_container" alt="Fuhlen Việt Nam">
-        </a>
-        <ul class="menu_container caret">
-            <li class="item_menu_container">
-                <a href="http://fuhlen.vn" target="_blank" style="color: red;">TRANG CHỦ</a>
-            </li>
-            <li class="item_menu_container">
-                <ul class="sp">
-                    <li class="sp_item">
-                        <a href="#" class="tooltip"> SẢN PHẨM <i class="fa fa-caret-down"></i></a>
-                        <ul class="trong">
-                            <li class="con">
-                                <a href="#">keyboard and mouse</a>
-                                <span class="fa fa-caret-right"></span>
-                            </li>
-                            <li class="con"><a href="#">Headphone</a></li>
-                            <li class="con"><a href="#">Fuhlen Smartlock</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="item_menu_container">GIỚI THIỆU</li>
-            <li class="item_menu_container">TIN TỨC</li>
-            <li class="item_menu_container">
-                <ul class="sp">
-                    <li class="sp_item">
-                        <a href="#" class="tooltip"> HỔ TRỢ <i class="fa fa-caret-down"></i></a>
-                        <ul class="trong">
-                            <li class="con"><a href="#">Dowload Driver</a></li>
-                            <li class="con"><a href="#">Dowload User Guide</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="item_menu_container">LIÊN HỆ</li>
-            <li class="item_menu_container header_divider"></li>
-            <li class="item_menu_container">
-                <ul class="sp">
-                    <li class="sp_item">
-                        <a href="#" class="tooltip"><span class="fa fa-search fa-1.5x"></span></a>
-                        <ul class="trong">
-                            <li class="con search">
-                                <a href="#">
-                                    <input type="search" id="search" placeholder="tìm kiếm">
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="content">
-        <div class="move">
-            <div class="move_back">
-                <i class="fa fa-angle-right " onclick="Next();" style="position: absolute;
-                                                                            left: 62rem;"></i>
-                <i class="fa fa-angle-left " onclick="Back();" style="position: absolute;
-                    right:-5px;"></i>
-            </div>
-            <div class="chuyen_slide">
-                <img src="./g900s.jpg" id="img" class="img_content">
-            </div>
+     <div class="top__content">FUHLEN VIỆT NAM</div>
+     <div class="menu" id="menu">
+          <a href="http://fuhlen.vn/" target="_blank" class="logo_container" title="Fuhlen việt nam-fuhlen marlock" rel="home">
+               <img src="./OIP.jpg" width="195" height="83" alt="Fuhlen Việt Nam">
+          </a>
+          <ul class="menu_container caret">
+               <li class="item_menu_container">
+                    <a href="http://fuhlen.vn" target="_blank" style="color: red;">TRANG CHỦ</a>
+               </li>
+               <li class="item_menu_container">
+                    <a href="#"> SẢN PHẨM <i class="fa fa-caret-down"></i></a>
+                    <ul class="sp">
+                         <li>
+                              <a href="#">
+                                   <span>keyboard and mouse</span>
+                                   <i class="fa fa-caret-right"></i>
+                              </a>
+                              <ul class="sp_dropdown">
+                                   <li>
+                                        <a href="#">
+                                             <span>Mouse</span>
+                                             <i class="fa fa-caret-right"></i>
+                                        </a>
+                                        <ul class="sp_dropdown">
+                                             <li><a href="#">Wrired Mouse</a></li>
+                                             <li><a href="#">Wireless Mouse</a></li>
+                                        </ul>
+                                   </li>
+                                   <li>
+                                        <a href="#">Keyboard</a>
+                                   </li>
+                                   <li>
+                                        <a href="#">Combo</a>
+                                   </li>
+                              </ul>
+                         </li>
+                         <li><a href="#">Headphone</a></li>
+                         <li><a href="#">Fuhlen Smartlock</a></li>
+                    </ul>
+               </li>
+               <li class="item_menu_container"><a href="#">GIỚI THIỆU</a></li>
+               <li class="item_menu_container"><a href="#">TIN TỨC</a></li>
+               <li class="item_menu_container">
+                    <a href="#"> HỔ TRỢ <i class="fa fa-caret-down"></i></a>
+                    <ul class="sp">
+                         <li class="con"><a href="#">Dowload Driver</a></li>
+                         <li class="con"><a href="#">Dowload User Guide</a></li>
+                    </ul>
+               </li>
+               <li class="item_menu_container"><a href="#">LIÊN HỆ</a></li>
+               <li class="item_menu_container header_divider"></li>
+               <li class="item_menu_container">
+                    <a href="#"><span class="fa fa-search fa-1.5x"></span></a>
+                    <ul class="sp">
+                         <li class="sp_item">
+                              <ul class="trong">
+                                   <li class="con search">
+                                        <a href="#">
+                                             <input type="search" id="search" placeholder="tìm kiếm">
+                                        </a>
+                                   </li>
+                              </ul>
+                         </li>
+                    </ul>
+               </li>
+          </ul>
+     </div>
+     <div class="content">
+          <div class="move_back">
+               <div onclick="Next();" class="btn__slide">
+                    <i class="fa fa-angle-right"></i>
+               </div>
+               <div onclick="Back();" class="btn__slide">
+                    <i class="fa fa-angle-left"></i>
+               </div>
+          </div>
+          <div class="chuyen_slide">
+               <img src="./g900s.jpg" id="img" class="img_content">
+          </div>
 
-        </div>
+     </div>
 
-    </div>
-
-    <div class="products">
-        <h3 class="title__products">
-            <hr class="hr_1">
-            <span class="product_title">DANH MỤC SẢN PHẨM</span>
-            <hr class="hr_2">
-        </h3>
-    </div>
-    <div class="product_list">
-        <div class="list">
-            <div class="list_side">
-                <a href="#">
-                    <img src="./sanpham1.jpg" width="736" height="300">
-                </a>
-                <h3 class="list_title">FUHLEN KEYBOARD AND MOUSE</h3>
-            </div>
-            <div class="list_side">
-                <a href="#">
-                    <img src="./phone.jpg" width="736" height="300">
-                </a>
-                <h3 class="list_title">FUHLEN SMARTLOCK</h3>
-            </div>
-        </div>
-    </div>
-    <div class="news">
-        <h3 class="news_title">
-            <hr class="new_hr1">
-            <span class="new_title">TIN TỨC</span>
-            <hr class="new_hr2">
-        </h3>
-    </div>
-    <div class="product_list_details">
-        <div class="product_list_details_side">
-            <div class="product_list_details_side_side">
-                <img src="./khoacua.png">
-                <a href="#" class="product_list_details_side__side">    Tài liệu hướng dẫn sử dụng khóa vân tay FUHLEN F01</a><br>
-                <a href="#" class="khoa">vui lòng dowload theo đường link dưới đây[...]</a>
-                <a href="#">
-                    <p>chi tiết</p>
-                </a>
-            </div>
-            <div class="product_list_details_side_side">
-                <img src="./khoathongminh.png">
-                <a href="#" class="product_list_details_side__side">Những điều bạn cần biết khi sử dụng khóa thông minh FUHLEN</a><br>
-                <a href="#" class="khoa">nhìn qua về võ hộp,tổng thể hộp</a>
-                <a href="#">
-                    <p>chi tiết</p>
-                </a>
-            </div>
-            <div class="product_list_details_side_side">
-                <img src="./trienlam.png">
-                <a href="#" class="product_list_details_side__side">Khóa thông minh FUHLEN tham gia triển lãm quốc tế VIETBUILD 2019</a><br>
-                <a href="#" class="khoa">triển lãm quôc tế VIETBUILD 2019 diễn ra[...]</a>
-                <a href="#">
-                    <p>chi tiết</p>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="footer_infor">
-        <div class="address">
-            <p>Địa chỉ</p>
-            <p>
-                <span>Công ty cổ phần Ninza:</span>
-            </p>
-            <p>Số 19H1 - Đường Trần Kim Xuyến - Phường Yên Hòa - Quận Cầu Giấy. </p>
-            <p>ĐT : (024)32009569 - (024) 32008069</p>
-            <P>
-                <span>Chi nhánh Hồ Chí Minh:</span>
-            </P>
-            <p>Số 9 - Đường A4 - Phường 12 - Quận Tân Bình.</p>
-            <p>ĐT: (028)38115086 - (028)38115087</p>
-            <p>
-                <span>Chi nhánh Đà Nẵng:</span>
-            </p>
-            <p>Số 30 Lê Duy Đình, P.Chính Gián, Quận Thanh Khê, TP Đà nẵng</p>
-            <p> ĐT : 0236.3690569</p>
-            <p>Website: www.fuhlen.vn</p>
-        </div>
-        <div class="fanpage">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFuhlenVietNamByNinza&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500"
-                style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+     <div class="products">
+          <h3 class="title__products">
+               <hr class="hr_1">
+               <span class="product_title">DANH MỤC SẢN PHẨM</span>
+               <hr class="hr_2">
+          </h3>
+     </div>
+     <div class="product_list">
+          <div class="list">
+               <div class="list_side">
+                    <a href="#">
+                         <img src="./sanpham1.jpg" width="736" height="300">
+                    </a>
+                    <h3 class="list_title">FUHLEN KEYBOARD AND MOUSE</h3>
+               </div>
+               <div class="list_side">
+                    <a href="#">
+                         <img src="./phone.jpg" width="736" height="300">
+                    </a>
+                    <h3 class="list_title">FUHLEN SMARTLOCK</h3>
+               </div>
+          </div>
+     </div>
+     <div class="news">
+          <h3 class="news_title">
+               <hr class="new_hr1">
+               <span class="new_title">TIN TỨC</span>
+               <hr class="new_hr2">
+          </h3>
+     </div>
+     <div class="product_list_details">
+          <div class="product_list_details_side">
+               <div class="product_list_details_side_side">
+                    <img src="./khoacua.png">
+                    <a href="#" class="product_list_details_side__side">Tài liệu hướng dẫn sử dụng khóa vân tay FUHLEN F01</a><br>
+                    <a href="#" class="khoa">vui lòng dowload theo đường link dưới đây[...]</a>
+                    <a href="#">
+                         <p>chi tiết</p>
+                    </a>
+               </div>
+               <div class="product_list_details_side_side">
+                    <img src="./khoathongminh.png">
+                    <a href="#" class="product_list_details_side__side">Những điều bạn cần biết khi sử dụng khóa thông minh FUHLEN</a><br>
+                    <a href="#" class="khoa">nhìn qua về võ hộp,tổng thể hộp</a>
+                    <a href="#">
+                         <p>chi tiết</p>
+                    </a>
+               </div>
+               <div class="product_list_details_side_side">
+                    <img src="./trienlam.png">
+                    <a href="#" class="product_list_details_side__side">Khóa thông minh FUHLEN tham gia triển lãm quốc tế VIETBUILD 2019</a><br>
+                    <a href="#" class="khoa">triển lãm quôc tế VIETBUILD 2019 diễn ra[...]</a>
+                    <a href="#">
+                         <p>chi tiết</p>
+                    </a>
+               </div>
+          </div>
+     </div>
+     <div class="footer_infor">
+          <div class="address">
+               <p>Địa chỉ</p>
+               <p>
+                    <span>Công ty cổ phần Ninza:</span>
+               </p>
+               <p>Số 19H1 - Đường Trần Kim Xuyến - Phường Yên Hòa - Quận Cầu Giấy. </p>
+               <p>ĐT : (024)32009569 - (024) 32008069</p>
+               <P>
+                    <span>Chi nhánh Hồ Chí Minh:</span>
+               </P>
+               <p>Số 9 - Đường A4 - Phường 12 - Quận Tân Bình.</p>
+               <p>ĐT: (028)38115086 - (028)38115087</p>
+               <p>
+                    <span>Chi nhánh Đà Nẵng:</span>
+               </p>
+               <p>Số 30 Lê Duy Đình, P.Chính Gián, Quận Thanh Khê, TP Đà nẵng</p>
+               <p> ĐT : 0236.3690569</p>
+               <p>Website: www.fuhlen.vn</p>
+          </div>
+          <div class="fanpage">
+               <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFuhlenVietNamByNinza&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500"
+                    style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
             </iframe>
-        </div>
-    </div>
-    <div class="footer">
-        <p>clone by trường 2020</p>
-    </div>
+          </div>
+     </div>
+     <div class="footer">
+          <p>clone by trường 2020</p>
+     </div>
 
-
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 
 </html>
