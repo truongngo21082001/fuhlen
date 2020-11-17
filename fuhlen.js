@@ -19,6 +19,8 @@ window.onload = () => {
      }
      setInterval(Next, 3000);
 
+     showMenu();
+
      window.onscroll = showMenu;
 
      function showMenu() {
