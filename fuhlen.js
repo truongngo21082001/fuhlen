@@ -1,37 +1,37 @@
-const Imgs = ["hinh/g900s.jpg", "hinh/phone.jpg", ];
+const Imgs = ["assets/Image/g900s.jpg", "assets/Image/phone.jpg"];
 var slide, wCarousel = 0,
-    wImg = 0,
-    posCarousel = 0;
+     wImg = 0,
+     posCarousel = 0;
 
 window.onload = () => {
-    slide = document.getElementById('slide');
-    showMenu();
-    renderCarousel();
-    window.onscroll = showMenu;
+     slide = document.getElementById('slide');
+     showMenu();
+     renderCarousel();
+     window.onscroll = showMenu;
 }
 
 function renderCarousel() {
-    slide.innerHTML = Imgs.map((i) => {
-        return `<div class="carousel-item">
+     slide.innerHTML = Imgs.map((i) => {
+          return `<div class="carousel-item">
             <img src="${i}" class="d-block w-100">
         </div>`;
-    }).join('');
-    slide.children[0].classList.add('active');
+     }).join('');
+     slide.children[0].classList.add('active');
 
 }
 
 function showMenu() {
-    var menu = document.getElementById('menu');
-    if (document.documentElement.scrollTop > 127)
-        menu.classList.add('nav_menu');
-    else
-        menu.classList.remove('nav_menu');
+     var menu = document.getElementById('menu');
+     if (document.documentElement.scrollTop > 127)
+          menu.classList.add('nav_menu');
+     else
+          menu.classList.remove('nav_menu');
 }
 
 setInterval(showMenu, 3000);
 
 // (function() {
-//     ("#menu").click(function(e) {
+//     $("#menu").click(function(e) {
 //         e.preventDefault();
 //         ("#wrapper").toggleClass("caret");
 //     });
