@@ -29,7 +29,7 @@
     }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1000px) {
     .list {
         flex-direction: column;
         width: 100%;
@@ -38,9 +38,13 @@
 }
 
 @media screen and (max-width:900px) {
-    .product_list_details_side_side {
+    .product_list_details {
+        margin: auto;
         width: 100%;
         flex-direction: column;
+    }
+    .carousel-inner {
+        width: 100%;
     }
 }
 
@@ -50,6 +54,7 @@
         flex-direction: column;
     }
     .address {
+        text-align: center;
         width: 100%;
     }
 }
@@ -66,11 +71,12 @@
     .tintuc {
         display: flex;
         width: 100%;
-        margin: 0 0 23px 20rem;
+        text-align: center;
+        margin: 0 0 23px 28rem;
     }
     .fanpage {
-        max-width: 500px;
-        margin: 0 auto;
+        width: 41rem;
+        margin: 0;
         padding: 0;
     }
 }

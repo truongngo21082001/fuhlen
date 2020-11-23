@@ -137,9 +137,13 @@ div.menu {
 }
 
 input {
-    background-color: #e2d3e1;
-    width: 250px;
-    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 5rem;
+    top: 1rem;
+    border-radius: 10px;
+    background-color: #d2c2c2;
+    color: #000;
 }
 
 .header_divider {
@@ -253,7 +257,6 @@ li {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -293,6 +296,21 @@ a {
     background-color: #446084;
     color: #fff;
     border-color: #446084;
+    border-radius: 1rem;
+}
+
+.product_list_details_side_side>.khoa {
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    from {
+        color: #ffffff;
+    }
+    to {
+        color: #5555;
+    }
 }
 
 .product_list_details_side_side>.khoa:hover {
@@ -302,7 +320,7 @@ a {
 .footer_infor {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -310,9 +328,12 @@ a {
     font-weight: bolder;
 }
 
+.fanpage {
+    width: 36%;
+}
+
 .address {
-    width: 100%;
-    padding: 3rem;
+    padding: 3rem 0;
 }
 
 .address>iframe {
@@ -324,4 +345,29 @@ a {
     background-color: #666666;
     text-align: center;
     margin-bottom: 0;
+}
+
+.upPage a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+.upPage a span {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    line-height: 50px;
+    margin-right: 6px;
+    height: 24px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 36rem;
+}
+
+.upPage a span:hover {
+    background-color: blue;
+    color: white;
 }
